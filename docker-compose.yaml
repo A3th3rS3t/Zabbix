@@ -1,29 +1,29 @@
 ---
 services:
-  zabbix-server:
+  zabbix_server:
     image: zabbix/zabbix-server-pgsql:latest
-    container_name: zabbix-server
+    container_name: zabbix_server
     restart: always
     env_file:
       - .env
     ports:
       - "10051:10051"
     networks:
-      - zabbix-net
+      - zabbix_net
 
-  zabbix-web:
+  zabbix_web:
     image: zabbix/zabbix-web-nginx-pgsql:latest
-    container_name: zabbix-web
+    container_name: zabbix_web
     restart: always
     env_file:
       - .env
     ports:
       - "8080:8080"
     depends_on:
-      - zabbix-server
+      - zabbix_server
     networks:
-      - zabbix-net
+      - zabbix_nets
 
 networks:
-  zabbix-net:
+  zabbix_net:
     driver: bridge
