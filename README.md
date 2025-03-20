@@ -59,7 +59,7 @@ wget https://cdn.zabbix.com/zabbix/sources/stable/6.0/zabbix-6.0.0.tar.gz
 tar -xzf zabbix-6.0.0.tar.gz
 
 # Импортируйте данные
-cd zabbix-6.4.8/database/postgresql
+cd zabbix-6.0.0/database/postgresql
 sudo -u zabbix psql zabbix < schema.sql
 sudo -u zabbix psql zabbix < images.sql
 sudo -u zabbix psql zabbix < data.sql
