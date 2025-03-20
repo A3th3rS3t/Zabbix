@@ -17,6 +17,8 @@ cd /opt/docker/
 Клонируйте репозиторий с GitHub:
 ```bash
 git clone https://github.com/A3th3rS3t/Zabbix-docker.git
+```
+```bash
 cd Zabbix-docker
 ```
 В репозитории должны быть файлы `docker-compose.yaml` и `.env`.
