@@ -56,7 +56,7 @@ sudo systemctl restart postgresql
 ```bash
 # Скачайте схему и данные
 wget https://cdn.zabbix.com/zabbix/sources/stable/6.0/zabbix-6.0.0.tar.gz
-tar -xzf zabbix-6.4.8.tar.gz
+tar -xzf zabbix-6.0.0.tar.gz
 
 # Импортируйте данные
 cd zabbix-6.4.8/database/postgresql
