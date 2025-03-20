@@ -22,7 +22,7 @@ services:
     depends_on:
       - zabbix_server
     networks:
-      - zabbix_nets
+      - zabbix_net
 
 networks:
   zabbix_net:
