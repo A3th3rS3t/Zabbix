@@ -60,9 +60,9 @@ tar -xzf zabbix-6.0.0.tar.gz
 
 # Импортируйте данные
 cd zabbix-6.0.0/database/postgresql
-sudo -u postgres psql zabbix < schema.sql
-sudo -u postgres psql zabbix < images.sql
-sudo -u postgres psql zabbix < data.sql
+psql -U zabbix -h <localhost_ip> -d zabbix -f schema.sql
+psql -U zabbix -h <localhost_ip> -d zabbix -f images.sql
+psql -U zabbix -h <localhost_ip> -d zabbix -f data.sql
 ```
 
 ## 5. Запуск сервисов через Docker Compose
