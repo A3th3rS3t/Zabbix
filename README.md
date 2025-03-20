@@ -68,7 +68,7 @@ sudo -u postgres psql zabbix < data.sql
 ## 5. Запуск сервисов через Docker Compose
 В директории с проектом выполните команду для запуска сервисов:
 ```bash
-docker-compose up -d
+docker compose up -d
 ```
 Это запустит два контейнера:
 ```bash
@@ -88,6 +88,6 @@ docker logs zabbix_server
 Если вам нужно изменить порты или другие параметры, отредактируйте файл 
 docker-compose.yaml и перезапустите сервисы:
 ```bash
-docker-compose down
-docker-compose up -d
+docker compose down
+docker compose up -d
 ```
