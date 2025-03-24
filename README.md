@@ -1,4 +1,4 @@
-# Zabbix with local database
+# Zabbix
 
 Эта конфигурация предназначена для развертывания системы мониторинга `Zabbix` с использованием Docker Compose. `Zabbix Server` использует PostgreSQL в качестве базы данных, а `Zabbix Web` предоставляет веб-интерфейс для управления мониторингом.
 
